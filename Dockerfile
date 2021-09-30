@@ -1,6 +1,6 @@
 # Start FROM Nvidia PyTorch image https://ngc.nvidia.com/catalog/containers/nvidia:pytorch
 # FROM nvcr.io/nvidia/pytorch:21.09-py3
-FROM nvidia/cuda 
+FROM nvidia/cuda:11.4.2-base-ubuntu20.04 
 
 # Install linux packages
 RUN apt update && apt install -y 
